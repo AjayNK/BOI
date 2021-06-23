@@ -10,7 +10,8 @@ public class TestScript {
 	 public static void print() throws InterruptedException {
 			System.setProperty("webdriver.chrome.driver", "C:\\selenium_jars\\browser_drivers\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
-			driver.get("https://www.facebook.com");		
+			driver.get("https://www.facebook.com");
+			System.out.println("Browser launched Successfully");
 			driver.manage().window().maximize();
 			Thread.sleep(3000);
 			driver.close();
